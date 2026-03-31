@@ -345,49 +345,39 @@
 			</svg>
 		</footer>
 	</div>
+<script>
+	// Vavril Countdown / Day Counter
+	document.addEventListener("DOMContentLoaded", function () {
+		const el = document.getElementById("timer")
+		if (!el) return
 
-	<script>
-		// Vavril Countdown / Day Counter
-		document.addEventListener('DOMContentLoaded', function() {
-		    const el = document.getElementById('timer');
-		    if (!el) return;
+		function updateVavrilStatus() {
+			const now = new Date()
+			const currentYear = now.getFullYear()
 
-		    function updateVavrilStatus() {
-		        const now = new Date();
-		        const currentYear = now.getFullYear();
+			// April 1st of this year
+			let april1st = new Date(currentYear, 3, 1, 0, 0, 0)
 
-		        const april1st = new Date(currentYear, 3, 1); // Month 3 = April (0-based)
+			// If we're on or after April 1st this year → stay in "day X of 30" mode
+			if (now >= april1st) {
+				const startOfApril = new Date(currentYear, 3, 1, 0, 0, 0)
+				const dayOfApril = Math.floor((now - startOfApril) / (1000 * 60 * 60 * 24)) + 1
+				const dayNumber = Math.min(Math.max(dayOfApril, 1), 30)
+				el.textContent = `currently: #day${dayNumber} of 30`
+			} else {
+				// Before April 1st → countdown to this year's April 1st
+				const diff = april1st - now
+				const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+				const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+				const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+				el.textContent = `proceeding in ${days}d ${hours}h ${minutes}m`
+			}
+		}
 
-		        // If we're already past April 1st this year, use next year's April 1st for countdown
-		        if (now > april1st && now.getMonth() >= 3) {
-		            april1st.setFullYear(currentYear + 1);
-		        }
-
-		        const diff = april1st - now;
-
-		        if (diff > 0) {
-		            // Before April 1st → Show countdown
-		            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-		            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-		            el.textContent = `proceeding in ${days}d ${hours}h ${minutes}m`;
-		        } 
-		        else {
-		            // On or after April 1st → Show "Day X of 30"
-		            const startOfApril = new Date(currentYear, 3, 1);
-		            const dayOfApril = Math.floor((now - startOfApril) / (1000 * 60 * 60 * 24)) + 1;
-
-		            // Cap at day 30
-		            const dayNumber = Math.min(Math.max(dayOfApril, 1), 30);
-		            el.textContent = `#day${dayNumber} of 30`;
-		        }
-		    }
-
-		    updateVavrilStatus()
-		    setInterval(updateVavrilStatus, 60000)
-		});
-		</script>
+		updateVavrilStatus()
+		setInterval(updateVavrilStatus, 60000) // every minute is fine
+	})
+</script>
 
 	</body>
 </html>
