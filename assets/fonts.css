@@ -1,0 +1,252 @@
+/* TODO: make local */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c527ff8a25f34c715_ApercuPro-LightItalic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4dd07f5d0727c5bee9_ApercuPro-LightItalic.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c510145cb885ac218_ApercuPro-LightItalic.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc3047a1cbe6d3411_ApercuPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c399ef293f386c05e_ApercuPro-Light.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc3047a1cbe6d33d8_ApercuPro-Light.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c8592e088c97c7b8d_ApercuPro-Light.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4caa5ad338906f8b52_ApercuPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c12811f39bf6194a3_ApercuPro-Italic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc4c73b56a5bc630e_ApercuPro-Italic.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c527ff8a25f34c6f2_ApercuPro-Italic.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c5d6cb48e44b71126_ApercuPro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4ca5bc1fe0b003c635_ApercuPro-MediumItalic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c5d6cb48e44b710fb_ApercuPro-MediumItalic.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc3047a1cbe6d33b7_ApercuPro-MediumItalic.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc8bc90a4cfff2d77_ApercuPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c4d826acf9eed4b2a_ApercuPro-ExtraLightItalic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4caa5ad338906f8b32_ApercuPro-ExtraLightItalic.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc3047a1cbe6d3396_ApercuPro-ExtraLightItalic.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c12811f39bf6194ee_ApercuPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c0fee31968f0de7ac_ApercuPro-Medium.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4ce36a86b1455985b0_ApercuPro-Medium.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c5d6cb48e44b710ab_ApercuPro-Medium.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c38cc09d755b901b9_ApercuPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c1d51b5dea1529fdb_ApercuPro-Bold.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cf8f0c0f28901faaf_ApercuPro-Bold.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc4c73b56a5bc628f_ApercuPro-Bold.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc4c73b56a5bc6312_ApercuPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c8592e088c97c7b83_ApercuPro-ExtraLight.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c1d51b5dea152a03e_ApercuPro-ExtraLight.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c643444529b7d6c0e_ApercuPro-ExtraLight.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cddd2492e992cc34a_ApercuPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c1d51b5dea1529fd4_ApercuPro-Black.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c85dad8e996604e82_ApercuPro-Black.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4caa5ad338906f8af6_ApercuPro-Black.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cd6c6db7202a48474_ApercuPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc3047a1cbe6d3350_ApercuPro-BlackItalic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c527ff8a25f34c6cf_ApercuPro-BlackItalic.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c8592e088c97c7b3d_ApercuPro-BlackItalic.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4ccd068d52b9cbe20e_ApercuPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c1d51b5dea152a016_ApercuPro-BoldItalic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cd0bbd2c82ee7e658_ApercuPro-BoldItalic.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c643444529b7d6c0a_ApercuPro-BoldItalic.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c8592e088c97c7bd9_ApercuPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc8bc90a4cfff2d32_ApercuPro-Thin.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c1d51b5dea152a048_ApercuPro-Thin.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c527ff8a25f34c71b_ApercuPro-Thin.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4ccd068d52b9cbe225_ApercuPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercupro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4dd07f5d0727c5bee3_ApercuPro-ThinItalic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4cc8bc90a4cfff2d63_ApercuPro-ThinItalic.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4c5151931b6b9875a5_ApercuPro-ThinItalic.woff') format('woff'), url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/66532d4d5d6cb48e44b711da_ApercuPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df4c6071434a91e131_Apercu%20Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9de4dda0c56642d5dcd_Apercu%20Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df02aa1eb904f2cb0e_Apercu%20Medium%20Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df4dda0c56642d5dde_Apercu%20Light%20Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df1ea038d81ff4d6c5_Apercu%20Bold%20Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df7853453f47fbb6c6_Apercu%20Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df1ea038d81ff4d6f5_Apercu%20Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9dff11be0ad44c17418_Apercu%20Pro%20Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9dfe904bb03e752085e_Apercu%20Pro%20Medium%20Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df9045e15b52d425e3_Apercu%20Pro%20Light%20Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df631c695e74b42c79_Apercu%20Pro%20Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df631c695e74b42c84_Apercu%20Pro%20Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9df23d0071fd87d23d7_Apercu%20Pro%20Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Mono';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9e0e904bb03e75208bc_Apercu%20Mono.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9e0b168c4574ee617b0_Apercu%20Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro Mono';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9e09fdc8739cef905bd_Apercu%20Pro%20Mono.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9e0076cd8e32b8be3a2_Apercu%20Pro%20Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('https://cdn.prod.website-files.com/65fc2027d8fc825751633f09/6649d9e0c4b663b9f50078b9_Apercu%20Pro%20Bold%20Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}

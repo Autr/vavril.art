@@ -1,0 +1,303 @@
+@import url('/assets/fonts.css');
+
+
+html, body, ul, ol, li, p {
+	margin: 0;
+	padding: 0;
+	margin-inline: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	background: var(--bg);
+	color: var(--fg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+
+	--green: rgb( 52, 196, 207 );
+	--red: rgb( 255, 38, 59 );
+	--pink: rgb( 255, 55, 240 );
+	--yellow: rgb( 255, 233, 221 );
+	--blue: #003366;
+	--rad: 1.682em;
+	--fg: #feeeff;
+	--bg: #001133;
+	--med: 520px;
+	--wide: 576px;
+
+}
+
+html, body {
+	line-height: 1.682em;
+	font-size: 16px;
+	font-family: Plus Jakarta Sans, sans-serif;
+}
+
+@media (max-width: 576px) {
+	body {
+		font-size: 2.6vw;
+	}
+
+	.container {
+		overflow-x: clip;
+	}
+}
+
+body {
+	box-sizing: border-box;
+	padding: 0.682em;
+}
+
+video {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	mix-blend-mode: screen;
+}
+
+.container {
+	max-width: var(--wide);
+	margin: 0 auto;
+}
+
+.container > * {
+	width: 100%;
+}
+
+header, main, footer {
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	position: relative;
+	top: -1.682em;
+	margin-bottom: 1.682em
+	/*mix-blend-mode: screen;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: Apercu Pro, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 0.682em;
+	display: flex;
+	justify-content: space-between;
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682* 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 ));
+}
+
+
+header h1 {
+	font-size: calc( 1.682em * 1.682 * 1.682 * 1.682);
+	background: var(--green);
+	border-radius: var(--rad);
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682* 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 ));
+}
+
+dl {
+	position: absolute;
+	top: calc( -1.682em  );
+	right: 0px;
+}
+
+dd {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+dd * {
+	background: var(--red);
+	font-size: calc( 1.682em * 1.682);
+	line-height: 0.682em;
+	font-weight: bold;
+	/*mix-blend-mode: color-dodge;*/
+	border-radius: var(--rad);
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682* 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 ));
+}
+
+dd span {
+	background-color: var(--pink);
+	font-weight: bold;
+	font-size: calc( 1.682em * 1.682  * 1.682 * 1.682 );
+	/*mix-blend-mode: screen;*/
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682* 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 ));
+}
+
+span.tag {
+	background: var(--red);
+	border-radius: var(--rad);
+	font-size: 1.682em;
+	display: inline-block;
+	/*mix-blend-mode: screen;*/
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682* 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));
+}
+
+header .tag {
+	position: relative;
+	left: calc( 1.682em * 1.682 );
+	top: -0.682em;
+}
+
+.hr {
+	background-color: var(--fg);
+	height: 2px;
+	display: block;
+	border-radius: var(--rad);
+	margin-bottom: 1.682em;
+	filter: blur(calc( 0.682em * 0.682  * 0.682  * 0.682 ));
+}
+
+p {
+	margin-bottom: 1.682em;
+}
+
+p b {
+	color: var(--yellow);
+}
+
+p a {
+	border-bottom: 2px solid var(--yellow);
+	font-weight: bold;
+	color: var(--yellow)!important;
+	text-decoration: none;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: calc( 1.682em * 1.682  );
+	mix-blend-mode: screen;
+	border-radius: var(--rad);
+	margin-bottom: 0.682em;
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682* 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));
+}
+
+h2 > span {
+	font-size: 1.682em;
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));
+	mix-blend-mode: screen;
+}
+
+#scenario h2 {
+	background-color: var(--pink);
+}
+#immediacy h2 {
+	background-color: var(--red);
+}
+#remediation h2 {
+	background-color: var(--green);
+}
+
+section h1 {
+	background-color: var(--fg);
+	color: var(--bg);
+	border-radius: var(--rad);
+	font-size: calc( 1.682em * 1.682 * 1.682 * 1.682 );
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));
+	margin: 1.682rem 0;
+}
+
+ol {
+	list-style: none;
+	padding-left: 0!important;
+	margin-left: 0!important;
+	margin: 1.682em 0;
+}
+
+ol li {
+	padding-left: 0!important;
+	margin-left: 0!important;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	margin: 0.682em 0;
+}
+
+ol li:nth-child(3n + 1) span.tag { background: var(--pink); }
+ol li:nth-child(3n + 2) span.tag { background: var(--red); }
+ol li:nth-child(3n) span.tag { background: var(--green); }
+
+
+ol li .tag {
+	height: 1em;
+	min-width: calc( 1.682em * 1.682  * 1.682  * 1.682 );
+}
+
+.prompt {
+	/*font-size: 1.682em;*/
+	/*font-style: italic;*/
+	display: flex;
+	justify-content: space-between;
+	background: var(--blue);
+	flex-grow: 1;
+	border-radius: var(--rad);
+	color: var(--fg);
+	padding-left:0.682em;
+	/*border: 2px solid var(--fg);*/
+	/*font-weight: bold;*/
+	/*text-transform: uppercase;*/
+	/*font-size: 0.682em;*/
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));
+	margin-left: 0.682em;
+}
+
+.prompt > span {
+	font-size: 1.682em;
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 ));
+	position: relative;
+	/*right: -0.682em;*/
+}
+
+h3 {
+	margin: 0.682em 0;
+}
+h3 a {
+	text-decoration: none;
+	color: var(--fg)!important;
+	text-transform: none;
+	border-bottom: 2px solid var(--yellow);
+	line-height: 1em;
+	color: var(--yellow);
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+svg {
+
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));
+	max-width: 68.2%;
+	margin: 0 auto;
+}
+
+svg * {
+	fill: var(--fg);
+	stroke-width: 0.682em;
+}
+
+svg *:nth-child(3n + 1) { stroke: var(--pink); }
+svg *:nth-child(3n + 2) { stroke: var(--red); }
+svg *:nth-child(3n) { stroke: var(--green); }
+
+#timer {
+	text-transform: lowercase;
+	font-weight: bold;
+	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  * 0.682 * 0.682 * 0.682  ));
+	color: var(--yellow);
+	padding: 0.682em;
+	position: relative;
+	left: 1.682em;
+	top: -1.682em;
+}
