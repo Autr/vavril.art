@@ -41,7 +41,7 @@ html, body {
 
 @media (max-width: 576px) {
 	body {
-		font-size: 2.6vw;
+		font-size: 2.66vw;
 	}
 
 	.container {
@@ -220,6 +220,11 @@ ol li {
 	margin: 0.682em 0;
 }
 
+ol li.selected .prompt {
+	background-color: var(--fg);
+	color: var(--bg);
+}
+
 ol li:nth-child(3n + 1) span.tag { background: var(--pink); }
 ol li:nth-child(3n + 2) span.tag { background: var(--red); }
 ol li:nth-child(3n) span.tag { background: var(--green); }
@@ -244,7 +249,7 @@ ol li .tag {
 	/*font-weight: bold;*/
 	/*text-transform: uppercase;*/
 	/*font-size: 0.682em;*/
-	filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));
+	/*filter: blur(calc( 0.682em * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682 * 0.682  ));*/
 	margin-left: 0.682em;
 }
 
@@ -257,14 +262,15 @@ ol li .tag {
 
 h3 {
 	margin: 0.682em 0;
+	filter: none;
 }
 h3 a {
 	text-decoration: none;
-	color: var(--fg)!important;
+	color: var(--yellow)!important;
 	text-transform: none;
 	border-bottom: 2px solid var(--yellow);
+	filter: none;
 	line-height: 1em;
-	color: var(--yellow);
 }
 
 

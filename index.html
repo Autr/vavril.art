@@ -260,6 +260,15 @@
 
 				<h3><a href="#faq3">Post on LinkedIn, are you quite mad?</a></h3>
 				<p>OK, maybe that was just because Grimes is now doing it — but you could upload them to <a href="https://archive.org" target="_blank" rel="noopener">Archive.org</a> or to <a href="https://ore.eu/" target="_blank">CERN ORE</a> instead, since it doesn't matter: we are little souls carrying around corpses, neither insects or specimens.</p>
+
+				<h3><a href="#faq4">Do I have to do all of them?</a></h3>
+				<p>Yes and no, and we don't want to pressure you. If you are inhibited by responsibilities, such as child care or selling your labour, perhaps you can find a way to work around this, or incorporate it - a rebellion against stricture.</p>
+
+				<h3><a href="#faq5">Why "VAVRIL"?</a></h3>
+				<p>It was the month when most people said they would be available, and also coincides with the date April 14th, which is globally celebrated as Avril 14th day by strange people who deify a strange man called Aphex Twin.</p>
+
+				<h3><a href="#faq6">Is there an ulterior motive to all this?</a></h3>
+				<p>Yes and no - the revolution will be soundtracked to <a href="https://www.youtube.com/watch?v=avOkNedtccE" target="_blank">Meltphase 6</a>.</p>
 			</section>
 			<span class="hr"></span>
 		</main>
@@ -364,6 +373,9 @@
 				const dayOfApril = Math.floor((now - startOfApril) / (1000 * 60 * 60 * 24)) + 1
 				const dayNumber = Math.min(Math.max(dayOfApril, 1), 30)
 				el.textContent = `currently: #day${dayNumber} of 30`
+
+				const item = document.querySelectorAll('ol li')[dayNumber-1]
+				item.classList.add('selected')
 			} else {
 				// Before April 1st → countdown to this year's April 1st
 				const diff = april1st - now
@@ -372,6 +384,7 @@
 				const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
 				el.textContent = `proceeding in ${days}d ${hours}h ${minutes}m`
 			}
+
 		}
 
 		updateVavrilStatus()
